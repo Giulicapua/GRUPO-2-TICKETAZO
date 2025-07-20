@@ -1,0 +1,5 @@
+# Estos archivos y carpetas no deben ser rastreados por Git
+.cypress/
+cypress/videos/
+cypress/screenshots/
+node_modules/
