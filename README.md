@@ -13,8 +13,8 @@ Este repositorio contiene el desarrollo del **Challenge QA** para la plataforma 
 | Nombre completo                  | Usuario GitHub |
 |------------------------------------|-------------------|
 | Giuliana Capua                  | [![Giulicapua](https://img.shields.io/badge/GitHub-Giulicapua-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Giulicapua) |
-| Completar nombre                      | [![merymolina](https://img.shields.io/badge/GitHub-belensuarez477-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/belensuarez477) |
-| Completar nombre              | [![D3PA](https://img.shields.io/badge/GitHub-Lulencina-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lulencina) |
+| Belen Suarez                       | [![belensuarez477](https://img.shields.io/badge/GitHub-belensuarez477-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/belensuarez477) |
+| Luana Lencina              | [![Lulencina](https://img.shields.io/badge/GitHub-Lulencina-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lulencina) |
 | Completar nombre                 | [![usuario](https://img.shields.io/badge/GitHub-usuario-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) |
 | Completar nombre               | [![usuario](https://img.shields.io/badge/GitHub-usuario-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) |
 | Completar nombre                      | [![usuario](https://img.shields.io/badge/GitHub-usuario-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) |
@@ -26,9 +26,9 @@ Este repositorio contiene el desarrollo del **Challenge QA** para la plataforma 
 
 | Entregable       | Enlace                                                                 |
 |------------------|------------------------------------------------------------------------|
-| [![GitHub](https://img.shields.io/badge/GitHub-Repositorio-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Giulicapua/GRUPO-2-TICKETAZO) | 🌐 Repositorio en GitHub |
-| [![Trello](https://img.shields.io/badge/Trello-Tablero-0052CC?style=for-the-badge&logo=trello&logoColor=white)](https://trello.com) | 🐞 Reporte de bugs (Trello) |
-| [![Google Sheets](https://img.shields.io/badge/Google%20Sheets-Plan%20de%20Pruebas-34A853?style=for-the-badge&logo=googlesheets&logoColor=white)](https://docs.google.com/) | 📋 Plan de pruebas (Google Sheets) |
+| [![GitHub](https://img.shields.io/badge/GitHub-Repositorio-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Giulicapua/GRUPO-2-TICKETAZO) | 🌐 [Repositorio en GitHub](https://github.com/Giulicapua/GRUPO-2-TICKETAZO) |
+| [![Trello](https://img.shields.io/badge/Trello-Tablero-0052CC?style=for-the-badge&logo=trello&logoColor=white)](https://trello.com) | 🐞 [Reporte de bugs (Trello)](https://trello.com) |
+| [![Google Sheets](https://img.shields.io/badge/Google%20Sheets-Plan%20de%20Pruebas-34A853?style=for-the-badge&logo=googlesheets&logoColor=white)](https://docs.google.com/) | 📋 [Plan de pruebas (Google Sheets)](https://docs.google.com/) |
 
 ---
 
@@ -68,8 +68,10 @@ GRUPO-2-TICKETAZO/
 │ ├── e2e/ → Casos automatizados
 │ ├── fixtures/ → Datos simulados
 │ └── support/ → Comandos custom
-├── package.json → Scripts y dependencias
-└── README.md → Este archivo
+├── .gitignore → Archivos a ser ignorados por GitHub
+├── README.md → Este archivo
+├── cypress.config.js → Configuracion de Cypress
+└── package.json → Scripts y dependencias
 ```
 
 ## Entrega
