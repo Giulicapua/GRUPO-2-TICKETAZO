@@ -8,6 +8,7 @@ Este repositorio contiene el desarrollo del **Challenge QA** para la plataforma 
 - Automatización con Cypress.
 - Reporte de bugs con Trello.
 
+## Integrantes
 ---
 
 | Nombre completo                  | Usuario GitHub |
@@ -15,11 +16,9 @@ Este repositorio contiene el desarrollo del **Challenge QA** para la plataforma 
 | Giuliana Capua                  | [![Giulicapua](https://img.shields.io/badge/GitHub-Giulicapua-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Giulicapua) |
 | Belen Suarez                       | [![belensuarez477](https://img.shields.io/badge/GitHub-belensuarez477-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/belensuarez477) |
 | Luana Lencina              | [![Lulencina](https://img.shields.io/badge/GitHub-Lulencina-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lulencina) |
-| David Cabrera               | [![NDavidCabrera](https://img.shields.io/badge/GitHub-NDavidCabrera-121011?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/NDavidCabrera) |
+| David Cabrera               | [![NDavidCabrera](https://img.shields.io/badge/GitHub-NDavidCabrera-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NDavidCabrera) |
 | Walter Belotti               | [![Walteriol](https://img.shields.io/badge/GitHub-Walteriol-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Walteriol) |
 | Completar nombre                      | [![usuario](https://img.shields.io/badge/GitHub-usuario-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/) |
-
-
 
 ---
 
