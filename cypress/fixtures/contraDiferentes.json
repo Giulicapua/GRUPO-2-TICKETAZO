@@ -1,0 +1,12 @@
+{
+  "nombres": "Martina",
+  "apellido": "Rios",
+  "telefono": "1102993854",
+  "dni": "42098725",
+  "provincia": "Buenos Aires",
+  "localidad": "Ciudadela",
+  "email": "martina_rios10@gmail.com",
+  "confirmar_email": "martina_rios10@gmail.com",
+  "contrasena": "Testeando123_",
+  "repetir_contrasena": "Testeando123_"
+}
