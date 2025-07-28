@@ -8,7 +8,7 @@ describe('Test Ticketazo Eventos', () =>{
     })
     it('Seleccionar evento logueado', () =>{
         cy.chooseEventLog('lulencina2@hotmail.com', 'Lu123456.', [
-         { fila: 22, columna: 4 }
+         { fila: 13, columna: 4 }
         ])
     })
     it('Prueba de filtros', () =>{
