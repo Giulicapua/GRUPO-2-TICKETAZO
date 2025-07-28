@@ -1,0 +1,12 @@
+{
+  "nombres": "María José",
+  "apellido": "Rodriguez",
+  "telefono": "1179487365",
+  "dni": "18039846",
+  "provincia": "Buenos Aires",
+  "localidad": "Ciudadela",
+  "email": "mjosefina@gmail.com",
+  "confirmar_email": "mjosefina@gmail.com",
+  "contrasena": "Probando@!123",
+  "repetir_contrasena": "Probando@!123"
+}

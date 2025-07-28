@@ -1,0 +1,157 @@
+Cypress.Commands.add('loginOrganizador', (email = 'prueba@test.com', password = 'Prueba1234!') => {
+    cy.visit('https://vps-3696213-x.dattaweb.com')
+    cy.get('a[href="/auth/login"]').click({force: true})
+    cy.get('[data-cy=input-email]').type(email)
+    cy.get('[data-cy=input-password]').type(password)
+    cy.get('[data-cy=btn-login]').click()
+    cy.url().should('not.include', '/auth/login')
+})
+Cypress.Commands.add('verificarEvento', (email = 'admin@admin.com', password = 'admin') => {
+    cy.visit('https://vps-3696213-x.dattaweb.com/auth/login')
+    cy.get('[data-cy=input-email]').type(email)
+    cy.get('[data-cy=input-password]').type(password)
+    cy.get('[data-cy=btn-login]').click()
+    cy.url().should('not.include', '/auth/login')
+    cy.get('a[href="/adminTable"]').click({force: true})
+    cy.contains('Gestión de Eventos').should('be.visible')
+    cy.readFile('cypress/fixtures/variablesEventos.json').then((data) => {
+    cy.contains(titulo + data.contador).should('be.visible')
+    })
+})
+Cypress.Commands.add('completarDatosEvento', () => {
+        cy.get('@datosEvento').then((evento) => {
+        cy.get('[data-cy="input-titulo"]').type(titulo+ evento.contador)
+        })
+        cy.get('[aria-label="día, "]').type(fechaEvento.dia)
+        cy.get('[aria-label="mes, "]').type(fechaEvento.mes)
+        cy.get('[aria-label="año, "]').type(fechaEvento.año)
+        cy.get('[data-cy="select-edad"]').click()
+        cy.get('[data-cy="option-edad-ATP"]').click()
+        cy.get('[data-cy="select-genero"]').click()
+        cy.get('[data-cy="option-genero-Recital"]').click()
+        cy.get('[data-cy="input-horario"] [aria-label="hora, "]').type(horarioEvento.hora)
+        cy.get('[data-cy="input-horario"] [aria-label="minuto, "]').type(horarioEvento.minuto)
+        cy.get('[data-cy="input-duracion"] [aria-label="hora, "]').type(duracionEvento.hora)
+        cy.get('[data-cy="input-duracion"] [aria-label="minuto, "]').type(duracionEvento.minuto)
+        cy.get('[data-cy="select-lugar-evento"]').click()
+        cy.get('[data-cy="option-lugar-21"]').click()
+        cy.contains('button', 'Seleccionar sala').click()
+        cy.get('[role=option]').eq(0).click()
+        cy.get('@datosEvento').then((evento) => {
+        cy.get('[data-cy="input-info"]').type('Descripción del evento ' + titulo + evento.contador)
+         })
+        cy.contains('button', 'Siguiente').click()
+        cy.contains('Mapa de Sectores').should('be.visible')
+    })
+
+Cypress.Commands.add('completarDatosEventoLugarPersonalizado', () => {
+            cy.get('@datosEvento').then((evento) => {
+        cy.get('[data-cy="input-titulo"]').type(titulo+ evento.contador)
+        })
+        cy.get('[aria-label="día, "]').type(fechaEvento.dia)
+        cy.get('[aria-label="mes, "]').type(fechaEvento.mes)
+        cy.get('[aria-label="año, "]').type(fechaEvento.año)
+        cy.get('[data-cy="select-edad"]').click()
+        cy.get('[data-cy="option-edad-ATP"]').click()
+        cy.get('[data-cy="select-genero"]').click()
+        cy.get('[data-cy="option-genero-Recital"]').click()
+        cy.get('[data-cy="input-horario"] [aria-label="hora, "]').type(horarioEvento.hora)
+        cy.get('[data-cy="input-horario"] [aria-label="minuto, "]').type(horarioEvento.minuto)
+        cy.get('[data-cy="input-duracion"] [aria-label="hora, "]').type(duracionEvento.hora)
+        cy.get('[data-cy="input-duracion"] [aria-label="minuto, "]').type(duracionEvento.minuto)
+        cy.get('[data-cy="select-lugar-evento"]').click()
+        cy.get('[data-cy="option-lugar-7"]').click()
+        cy.get('[data-cy="input-nombre-lugar"]').type('Lugar Personalizado')
+        cy.get('[data-cy="input-calle-lugar"]').type('Calle Prueba')
+        cy.get('[data-cy="input-altura-lugar"]').type('123')
+        cy.get('[data-cy="input-codigo-postal-lugar"]').type('1234')
+        cy.get('[aria-label="Provincia"]').type('Córdoba{enter}')
+        cy.get('[aria-label="Localidad"]').type('Colonia Caroya{enter}')
+
+                cy.get('@datosEvento').then((evento) => {
+        cy.get('[data-cy="input-info"]').type('Descripción del evento ' + titulo + evento.contador)
+         })
+        cy.contains('button', 'Siguiente').click()
+        cy.contains('Agregar Entrada').should('be.visible')
+})
+
+Cypress.Commands.add('completarDatosEventoVariasFechas', () => {
+        cy.get('[aria-label="Evento con múltiples fechas y horarios"]').click()
+        cy.get('@datosEvento').then((evento) => {
+        cy.get('[data-cy="input-titulo"]').type(titulo+ evento.contador)
+        })
+        cy.get('[data-cy="select-edad"]').click()
+        cy.get('[data-cy="option-edad-ATP"]').click()
+        cy.get('[data-cy="select-genero"]').click()
+        cy.get('[data-cy="option-genero-Recital"]').click()
+        cy.get('[data-cy="input-duracion"] [aria-label="hora, "]').type(duracionEvento.hora)
+        cy.get('[data-cy="input-duracion"] [aria-label="minuto, "]').type(duracionEvento.minuto)
+        cy.get('[data-cy="select-lugar-evento"]').click()
+        cy.get('[data-cy="option-lugar-21"]').click()
+        cy.contains('button', 'Seleccionar sala').click()
+        cy.get('[role=option]').eq(0).click()
+        cy.get('@datosEvento').then((evento) => {
+        cy.get('[data-cy="input-info"]').type('Descripción del evento ' + titulo + evento.contador)
+         })
+        cy.contains('button', '+ Agregar Fecha').click()
+        cy.get('[aria-label="día, "]').eq(0).type(fechaEvento.dia)
+        cy.get('[aria-label="mes, "]').eq(0).type(fechaEvento.mes)
+        cy.get('[aria-label="año, "]').eq(0).type(fechaEvento.año)
+        cy.get('[data-cy="input-horario-0-0"] [aria-label="hora"]').type(horarioEvento.hora)
+        cy.get('[data-cy="input-horario-0-0"] [aria-label="minuto"]').type(horarioEvento.minuto)
+        cy.contains('button', '+ Agregar Horario').eq(0).click()
+        cy.get('[data-cy="input-horario-0-1"] [aria-label="hora"]').type(segundoHorarioEvento.hora)
+        cy.get('[data-cy="input-horario-0-1"] [aria-label="minuto"]').type(segundoHorarioEvento.minuto)
+        cy.get('[aria-label="día, "]').eq(1).type(segundaFechaEvento.dia)
+        cy.get('[aria-label="mes, "]').eq(1).type(segundaFechaEvento.mes)
+        cy.get('[aria-label="año, "]').eq(1).type(segundaFechaEvento.año)
+        cy.get('[data-cy="input-horario-1-0"] [aria-label="hora"]').type(tercerHorarioEvento.hora)
+        cy.get('[data-cy="input-horario-1-0"] [aria-label="minuto"]').type(tercerHorarioEvento.minuto)
+        cy.contains('button', 'Siguiente').click()
+        cy.contains('Mapa de Sectores').should('be.visible')
+        })
+
+Cypress.Commands.add('cargarDatosEntradas', () => {
+        cy.contains('button', 'General').click()
+        cy.contains('button', 'Seleccionar entrada').click()
+        cy.get('[role=option]').eq(0).click()
+        cy.get('[aria-label="Precio Entrada"]').type('50236')
+        cy.contains('button', 'Siguiente').click()
+        cy.contains('Cargar Imagen Evento').should('be.visible')
+})
+
+Cypress.Commands.add('completarDatosPreventa', () => {
+            cy.get('[aria-label="Activar Preventa"]').click()
+            cy.get('[aria-label="Precio Preventa"]').type('1000')
+            cy.get('[aria-label="Cantidad Preventa"]').type('10')
+            cy.get('[aria-label="día, Fecha de inicio, "]').type('01')
+            cy.get('[aria-label="mes, Fecha de inicio, "]').type(fechaEvento.mes)
+            cy.get('[aria-label="año, Fecha de inicio, "]').type(fechaEvento.año)
+            cy.get('[aria-label="día, Fecha final, "]').type('05')
+            cy.get('[aria-label="mes, Fecha final, "]').type(fechaEvento.mes)
+            cy.get('[aria-label="año, Fecha final, "]').type(fechaEvento.año)
+})
+
+Cypress.Commands.add('cargarImagen', () => {
+        cy.get('input[type="file"]').attachFile('prueba.jpeg')
+        cy.contains('button', 'Siguiente').click()
+        cy.contains('Cargar Función').should('be.visible')
+})
+
+Cypress.Commands.add('confirmarEvento', () => {
+        cy.contains('button', 'Confirmar').click()
+        cy.contains('Evento creado con éxito').should('be.visible')
+        cy.wait(3000)
+})
+
+Cypress.Commands.add('irCargarEvento', () => {
+        cy.get('a[href="/newEvent"]').click({force: true})
+        cy.contains('Cargar Función').should('be.visible')
+})
+
+Cypress.Commands.add('logout', () => {
+        cy.contains('button', 'Logout').click({force: true})
+})
+
+import 'cypress-file-upload';import { fechaEvento, segundaFechaEvento, titulo, horarioEvento, segundoHorarioEvento, tercerHorarioEvento, duracionEvento } from './variablesGestionEventos'
+
