@@ -26,9 +26,25 @@ describe('Login con datos no validos', () => {
   })
 })
 
+// Logout 
+describe('Verificar la funcionalidad del Logout', () => {
+  it('Test case 3', () => {
+     cy.visit('https://vps-3696213-x.dattaweb.com/auth/login')
+     cy.contains('Login').should('be.visible').click()
+     cy.title('eq', 'Ticketazo')
+     cy.get('[data-cy="input-email"]').type('admin@admin.com') 
+     cy.get('[data-cy="input-password"]').type('admin')
+     cy.contains('button', /login/i).click()
+     cy.contains('Escanear QR').should('be.visible')
+     cy.wait(3000)
+     cy.contains('button','Logout').should('have.text','Logout').click()
+     cy.contains('Login').should('be.visible').click()
+  })
+})
+
 // Iniciar sesión mediante Google
 describe('Iniciar sesion con google', () => {
-  it('Test case 3', () => {
+  it('Test case 4', () => {
     cy.visit('https://vps-3696213-x.dattaweb.com/auth/login')
     cy.title('eq','Ticketazo')
     cy.get('[data-cy="btn-google-login"]').click()
@@ -37,7 +53,7 @@ describe('Iniciar sesion con google', () => {
 
 // Contraseña olvidada
 describe('Recuperacion de contraseña', () => {
-  it('Test case 4', () => {
+  it('Test case 5', () => {
     cy.visit('https://vps-3696213-x.dattaweb.com/auth/login')
     cy.contains('¿Olvidaste tu contraseña?').should('be.visible').click()
     cy.title('equal','Ticketazo')
@@ -49,7 +65,7 @@ describe('Recuperacion de contraseña', () => {
 
 // Contraseña que no coinciden
 describe('Contraseñas diferentes', () => {
-  it('Test case 5', () => {
+  it('Test case 6', () => {
       cy.visit('https://vps-3696213-x.dattaweb.com/auth/registerUser')
       cy.title('eq','Ticketazo')
       cy.contains('Registrar Cuenta').should('be.visible')
