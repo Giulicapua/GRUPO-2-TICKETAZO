@@ -1,5 +1,6 @@
 # QA Challenge | Grupo N°2 - Ticketazo 🎟️
 
+<a href="https://ticketazo.com.ar/"><img alt="Ticketazo Logo para GitHub" src="images/logo.png" width="300" /></a>
 ## Objetivo
 
 Este repositorio contiene el desarrollo del **Challenge QA** para la plataforma [Ticketazo](https://ticketazo.com.ar), aplicando:
