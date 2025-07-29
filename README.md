@@ -28,7 +28,7 @@ Este repositorio contiene el desarrollo del **Challenge QA** para la plataforma 
 |------------------|------------------------------------------------------------------------|
 | [![GitHub](https://img.shields.io/badge/GitHub-Repositorio-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Giulicapua/GRUPO-2-TICKETAZO) | 🌐 [Repositorio en GitHub](https://github.com/Giulicapua/GRUPO-2-TICKETAZO) |
 | [![Trello](https://img.shields.io/badge/Trello-Tablero-0052CC?style=for-the-badge&logo=trello&logoColor=white)](https://trello.com) | 🐞 [Reporte de bugs (Trello)](https://trello.com) |
-| [![Google Sheets](https://docs.google.com/spreadsheets/d/16nqB7t9lBOe3L_1KGiBUdebvTvcaXQwGYPrVJCzL1ME/edit?gid=0#gid=0) | 📋 [Plan de pruebas en (Google Sheets)](https://docs.google.com/spreadsheets/d/16nqB7t9lBOe3L_1KGiBUdebvTvcaXQwGYPrVJCzL1ME/edit?gid=0#gid=0) |
+| [![Google Drive](https://docs.google.com/spreadsheets/d/16nqB7t9lBOe3L_1KGiBUdebvTvcaXQwGYPrVJCzL1ME/edit?gid=0#gid=0) | 📋 [Plan de pruebas en (Google Sheets)](https://docs.google.com/spreadsheets/d/16nqB7t9lBOe3L_1KGiBUdebvTvcaXQwGYPrVJCzL1ME/edit?gid=0#gid=0) |
 ---
 
 ## SBP
