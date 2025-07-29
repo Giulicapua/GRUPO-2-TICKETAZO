@@ -151,6 +151,8 @@ Cypress.Commands.add('irCargarEvento', () => {
 
 Cypress.Commands.add('logout', () => {
         cy.contains('button', 'Logout').click({force: true})
+        cy.wait(2000)
+        cy.contains('button', 'Login').should('be.visible')
 })
 
 import 'cypress-file-upload';import { fechaEvento, segundaFechaEvento, titulo, horarioEvento, segundoHorarioEvento, tercerHorarioEvento, duracionEvento } from './variablesGestionEventos'
