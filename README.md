@@ -19,7 +19,7 @@ Este repositorio contiene el desarrollo del **Challenge QA** para la plataforma 
 | David Cabrera               | [![NDavidCabrera](https://img.shields.io/badge/GitHub-NDavidCabrera-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NDavidCabrera) |
 | Walter Belotti               | [![Walteriol](https://img.shields.io/badge/GitHub-Walteriol-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Walteriol) |
 | Soledad Villagra                      | [![msvillagra91](https://img.shields.io/badge/GitHub-msvillagra91-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/msvillagra91) |
-| Facundo Pacheco                     | [![Javi321321](https://img.shields.io/badge/GitHub-Javi321321-121011?style=for-the-badge&logo=github&logoColor=white)](https://[github.com/Javi321321) |
+| Facundo Pacheco                     | [![Javi321321](https://img.shields.io/badge/GitHub-Javi321321-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Javi321321) |
 ---
 
 ## Entregables
