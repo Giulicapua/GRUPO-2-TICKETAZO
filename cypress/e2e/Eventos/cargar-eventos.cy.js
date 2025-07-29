@@ -98,12 +98,7 @@ describe('Gestión de Eventos', () => {
         cy.verificarEvento()
     })
 
-
-
-
-
-
-   
+    
     it ('Crear evento vacío', () => {
         cy.irCargarEvento()
         cy.contains('button', 'Siguiente').click()
