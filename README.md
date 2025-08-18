@@ -13,7 +13,7 @@ Este repositorio contiene el desarrollo del **Challenge QA** para la plataforma 
 
 | Nombre completo                  | Usuario GitHub |
 |------------------------------------|-------------------|
-| Giuliana Capua                  | [![Giulicapua](https://img.shields.io/badge/GitHub-Giulicapua-121011?style=for-the-badge&logo=github&logoColor=white)][(https://github.com/Giulicapua) |
+| Giuliana Capua                  | [![Giulicapua](https://img.shields.io/badge/GitHub-Giulicapua-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Giulicapua) |
 | Belen Suarez                       | [![belensuarez477](https://img.shields.io/badge/GitHub-belensuarez477-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/belensuarez477) |
 | Luana Lencina              | [![Lulencina](https://img.shields.io/badge/GitHub-Lulencina-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Lulencina) |
 | David Cabrera               | [![NDavidCabrera](https://img.shields.io/badge/GitHub-NDavidCabrera-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NDavidCabrera) |
