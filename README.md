@@ -28,7 +28,7 @@ Este repositorio contiene el desarrollo del **Challenge QA** para la plataforma 
 |------------------|------------------------------------------------------------------------|
 | [![GitHub](https://img.shields.io/badge/GitHub-Repositorio-121011?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Giulicapua/GRUPO-2-TICKETAZO) | 🌐 [Repositorio en GitHub](https://github.com/Giulicapua/GRUPO-2-TICKETAZO) |
 | [![Trello](https://img.shields.io/badge/Trello-Tablero-0052CC?style=for-the-badge&logo=trello&logoColor=white)](https://trello.com) | 🐞 [Reporte de bugs (Trello)](https://trello.com) |
-| [![Google Sheets](https://img.shields.io/badge/GOOGLE%20SHEETS-PLAN%20DE%20PRUEBAS-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)](https://docs.google.com/spreadsheets/d/16nqB7t9lBOe3L_1KGiBUdebvTvcaXQwGYPrVJCzL1ME/edit?usp=sharing) | 📋 [Plan de pruebas en (Google Sheets)](https://docs.google.com/spreadsheets/d/16nqB7t9lBOe3L_1KGiBUdebvTvcaXQwGYPrVJCzL1ME/edit?gid=0#gid=0) |
+| [![Google Sheets](https://img.shields.io/badge/GOOGLE%20SHEETS-PLAN%20DE%20PRUEBAS-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)](https://docs.google.com/spreadsheets/d/15F4geH92zFfU4FYtKQcM0HOLL5lti_B5/edit?gid=1059415560#gid=1059415560) | 📋 [Plan de pruebas en (Google Sheets)](https://docs.google.com/spreadsheets/d/15F4geH92zFfU4FYtKQcM0HOLL5lti_B5/edit?gid=1059415560#gid=1059415560) |
 ---
 
 ## SBP
